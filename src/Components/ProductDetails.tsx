@@ -49,9 +49,10 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
         </div>
         
         <div style={{ display: 'flex', flexDirection: 'row' ,marginTop:'10px'}}>
-          <div style={{ width: '71px',  fontSize: '20px', fontWeight: '300' }}>
-            {`Rs. ${originalPrice}`}
-          </div>
+        <div style={{ width: '71px', fontSize: '20px', fontWeight: '300', textDecoration: 'line-through',color:'808080' }}>
+  {`Rs. ${originalPrice}`}
+</div>
+
           <div style={{ width: '71px', fontSize: '20px', fontWeight: '600', color: '#6D84FF' }}>
             {`Rs. ${discountedPrice}`}
           </div>
