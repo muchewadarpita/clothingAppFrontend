@@ -4,10 +4,12 @@ import home from '../Assets/home.jpg'
 import zeviLogo from "../Assets/zeviLogo.svg"
 import { IconButton, TextField } from '@mui/material'
 import SearchIcon from '@mui/icons-material/Search';
+import { useNavigate } from 'react-router-dom';
 const Dashboard = () => {
+    const navigate=useNavigate();
     const handleSearch = () => {
         // Implement your search functionality here
-        console.log('Search button clicked');
+        navigate("/productlist");
     };
 
     return (
