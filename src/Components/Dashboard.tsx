@@ -9,7 +9,7 @@ const Dashboard = () => {
     const navigate=useNavigate();
     const handleSearch = () => {
         // Implement your search functionality here
-        navigate("/productlist");
+        navigate("/ProductsList");
     };
 
     return (
